@@ -1,14 +1,19 @@
-public class Tiger extends Animal{
+public class Tiger extends Animal implements Walk{
     private int numberOfStripes;
     private int speed;
     private double soundLevel;
+
+    public Tiger(String nameOfAnimal) {
+        super(nameOfAnimal);
+    }
+
 
     @Override
     public void eatingCompleted() {
         System.out.println("Tiger: I have eaten Meat");
     }
-
-    public void walk() {
+    @Override
+    public void walking(int speed) {
         System.out.println("Tiger: I am walking at the speed: " + speed + "mph");
 
     }
