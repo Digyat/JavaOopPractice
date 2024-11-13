@@ -11,7 +11,7 @@ public class Penguin extends Animal implements Walk, Swim{
     }
     @Override
     public void eatingFood(){
-        System.out.println("Dolphin: I am eating delicious fish.");
+        System.out.println("Penguin: I am eating delicious fish.");
     }
 
     @Override
@@ -28,11 +28,11 @@ public class Penguin extends Animal implements Walk, Swim{
     }
     @Override
     public void swimming(int swimSpeed){
-        System.out.println("The penguin is swimming at: " + swimSpeed);
+        System.out.println("Penguin: I am swimming at the speed " + swimSpeed + " nautical miles per hour");
     }
     public void swimming() {
         int swimmingSpeed = 20;
-        System.out.println("Penguin is swimming at the speed " + swimmingSpeed + " nautical miles per hour");
+        System.out.println("Penguin: I am swimming at the speed " + swimmingSpeed + " nautical miles per hour");
     }
 
     public boolean isSwimming() {
