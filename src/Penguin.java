@@ -6,6 +6,9 @@ public class Penguin extends Animal implements Walk, Swim{
     public Penguin(String nameOfAnimal) {
         super(nameOfAnimal);
     }
+    public Penguin() {
+    	super("penguinAnimal");
+    }
     @Override
     public void eatingFood(){
         System.out.println("Dolphin: I am eating delicious fish.");

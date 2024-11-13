@@ -7,7 +7,9 @@ public class Tiger extends Animal implements Walk{
         super(nameOfAnimal);
     }
 
-
+    public Tiger() {
+    	super("tigerAnimal");
+    }
     @Override
     public void eatingCompleted() {
         System.out.println("Tiger: I have eaten Meat");

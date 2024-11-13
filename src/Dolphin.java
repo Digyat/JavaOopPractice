@@ -4,6 +4,9 @@ public class Dolphin extends Animal implements Swim{
     public Dolphin(String nameOfAnimal) {
         super(nameOfAnimal);
     }
+    public Dolphin() {
+    	super("dolphinAnimal");
+    }
     @Override
     public void eatingFood(){
         System.out.println("Dolphin: I am eating delicious fish.");
