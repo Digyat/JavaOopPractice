@@ -16,7 +16,7 @@ public class Penguin extends Animal implements Walk, Swim{
 
     @Override
     public void eatingCompleted(){
-        System.out.println("Dolphin: I have eaten fish.");
+        System.out.println("Penguin: I have eaten fish.");
     }
     @Override
     public void walking(int walkSpeed) {
