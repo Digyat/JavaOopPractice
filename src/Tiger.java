@@ -8,16 +8,20 @@ public class Tiger extends Animal implements Walk{
     }
 
     public Tiger() {
-    	super("tigerAnimal");
+        super("Tiger");
     }
     @Override
     public void eatingCompleted() {
-        System.out.println("Tiger: I have eaten Meat");
+        System.out.println("Tiger: I have eaten meat.");
     }
     @Override
     public void walking(int speed) {
-        System.out.println("Tiger: I am walking at the speed: " + speed + "mph");
+        System.out.println("Tiger: I am moving at the speed " + speed);
 
+    }
+    public void walking() {
+        int defaultSpeed = 40;
+        System.out.println("Tiger: I am moving at the speed " + defaultSpeed);
     }
 
     public int getNumberOfStripes() {

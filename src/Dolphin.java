@@ -5,7 +5,7 @@ public class Dolphin extends Animal implements Swim{
         super(nameOfAnimal);
     }
     public Dolphin() {
-    	super("dolphinAnimal");
+        super("Dolphin");
     }
     @Override
     public void eatingFood(){
@@ -20,6 +20,11 @@ public class Dolphin extends Animal implements Swim{
     @Override
     public void swimming(int swimmingSpeed){
         System.out.println("Dolphin: I am swimming at the speed of " + swimmingSpeed + " nautical miles per hour");
+    }
+    public void swimming() {
+        int defaultSwimmingSpeed = 30;
+        System.out.println("Dolphin: I am swimming at the speed " + defaultSwimmingSpeed);
+
     }
 
 

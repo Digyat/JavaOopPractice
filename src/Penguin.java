@@ -7,7 +7,7 @@ public class Penguin extends Animal implements Walk, Swim{
         super(nameOfAnimal);
     }
     public Penguin() {
-    	super("penguinAnimal");
+        super("Penguin");
     }
     @Override
     public void eatingFood(){
@@ -20,12 +20,19 @@ public class Penguin extends Animal implements Walk, Swim{
     }
     @Override
     public void walking(int walkSpeed) {
-        System.out.println("Penguin: I am walking at the speed: " + walkSpeed + "mph");
-
+        System.out.println("Penguin: I am walking at the speed " + walkSpeed + "mph");
+    }
+    public void walking() {
+        int walkingSpeed = 3;
+        System.out.println("Penguin: I am walking at the speed " + walkingSpeed + " mph");
     }
     @Override
     public void swimming(int swimSpeed){
         System.out.println("The penguin is swimming at: " + swimSpeed);
+    }
+    public void swimming() {
+        int swimmingSpeed = 20;
+        System.out.println("Penguin is swimming at the speed " + swimmingSpeed + " nautical miles per hour");
     }
 
     public boolean isSwimming() {
